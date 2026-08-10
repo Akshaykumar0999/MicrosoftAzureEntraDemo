@@ -4,7 +4,8 @@ function Navbar() {
   const { instance } = useMsal();
 
   const logout = () => {
-    instance.logoutPopup();
+    // instance.logoutPopup();
+    instance.logoutRedirect();
   };
 
   return <button onClick={logout}>Logout</button>;
