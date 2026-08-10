@@ -8,10 +8,14 @@ function Login() {
   // const handleLogin = () => {
   //   instance.loginPopup(loginRequest);
   // };
-  const handleLogin = async () => {
-    const response = await instance.loginPopup(loginRequest);
-    instance.setActiveAccount(response.account); // 🔥 IMPORTANT
-  };
+  // const handleLogin = async () => {
+  //   const response = await instance.loginPopup(loginRequest);
+  //   instance.setActiveAccount(response.account); // 🔥 IMPORTANT
+  // };
+
+  const handleLogout = () => {
+    instance.loginRedirect(loginRequest);
+  }
 
   return <button onClick={handleLogin}>Login with Microsoft</button>;
 }
