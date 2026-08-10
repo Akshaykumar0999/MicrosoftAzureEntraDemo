@@ -1,14 +1,3 @@
-// export const msalConfig = {
-//   auth: {
-//     clientId: "Client_ID",
-//     authority: "https://login.microsoftonline.com/TENANT_ID",
-//     redirectUri: "http://localhost:5173",
-//   },
-//   cache: {
-//     cacheLocation: "sessionStorage",
-//     storeAuthStateInCookie: false,
-//   },
-// };
 export const msalConfig = {
   auth: {
     clientId: "6dddfc86-8041-4da7-83c3-c7afefc9e305",
@@ -24,15 +13,11 @@ export const msalConfig = {
   },
 };
 
-// export const loginRequest = {
-//   scopes: [
-//     "openid",
-//     "profile",
-//     "email",
-//     "api://6dddfc86-8041-4da7-83c3-c7afefc9e305/access_as_user",
-//   ],
-// };
 export const loginRequest = {
-  // scopes: ["openid", "profile", "email"], // ✅ safe for now
-  Scope: "api://377ca873-67d4-44bd-ac6c-439d4ee06a22/ms_api.all"
+  scopes: [
+    "openid",
+    "profile",
+    "email",
+    "api://377ca873-67d4-44bd-ac6c-439d4ee06a22/ms_api.all",
+  ], // ✅ safe for now
 };
