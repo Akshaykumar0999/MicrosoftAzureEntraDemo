@@ -33,5 +33,6 @@ export const msalConfig = {
 //   ],
 // };
 export const loginRequest = {
-  scopes: ["openid", "profile", "email"], // ✅ safe for now
+  // scopes: ["openid", "profile", "email"], // ✅ safe for now
+  Scope: "api://377ca873-67d4-44bd-ac6c-439d4ee06a22/ms_api.all"
 };
